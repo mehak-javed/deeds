@@ -1,0 +1,97 @@
+@import "tailwindcss";
+*{
+    font-family: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" ;
+}
+:root {
+    --swiper-navigation-color: #000000; /* Example: Use your theme blue color */
+    --swiper-navigation-size: 30px;
+     /* Optional: Adjust arrow icon size */
+  }
+  
+@theme{
+    --color-themeClr: #ec7e01;
+    --color-themeClr2: #123761;
+    --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+}
+   /* StudentReview.css */
+
+/* This targets the Swiper pagination container */
+.mySwiper .swiper-pagination {
+    margin-top: 30px; /* Adjust this value as needed to increase or decrease the space */
+    position: relative; /* Ensure it respects margin-top if it's absolutely positioned by default */
+    /* If you notice it's still not moving much, you might need to adjust 'bottom' if Swiper sets it.
+       However, margin-top is usually enough for basic spacing. */
+
+  }
+  
+  /* Optional: If you want to fine-tune the space between individual dots, though less common */
+ 
+  .mySwiper .swiper-pagination-bullet {
+    background-color: #a0aec0; /* Example: A light gray */
+    opacity: 0.7;
+    margin: 0 8px;
+  }
+  
+  /* Color for the active dot */
+  .mySwiper .swiper-pagination-bullet-active {
+    background-color: #000000; /* Example: A darker blue (like your theme color) */
+    opacity: 1; /* Make it fully opaque when active */
+  }
+  /* JourneyRoadmap.css */
+
+
+.journey-swiper .swiper-button-prev,
+.journey-swiper .swiper-button-next {
+  color: #9fa2ba; /* Example: your theme blue */
+
+  border: 1px solid #ebecef; 
+  border-radius: 10%; 
+  padding: 20px; /* Space between the arrow icon and the border */
+  background-color: #f8fafb; /* Optional: semi-transparent background */
+  box-shadow: 0 2px 5px #f8fafb; /* Optional: subtle shadow */
+
+ 
+}
+
+/* Adjust the size of the arrow icon (the character rendered by Swiper) */
+.journey-swiper .swiper-button-prev::after,
+.journey-swiper .swiper-button-next::after {
+  font-size: 13px; /* Adjust as needed after adding padding */
+}
+.journey-swiper .swiper-button-prev {
+    left: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.journey-swiper .swiper-button-next {
+    right: 10px; /* Adjust as needed */
+    top: 50%;
+    transform: translateY(-50%);
+}
+.journey-swiper .swiper-pagination {
+    display: none;
+    /* Or */
+    /* visibility: hidden; */
+  }
+  @keyframes rotate-360-continuous {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .animate-rotate-360 {
+    animation: rotate-360-continuous 2s linear infinite; /* Adjust duration and timing as needed */
+  }
+  button {
+    cursor: pointer;
+}
+.unilist a{
+    color:#123761 ;
+}
+.unilist a:hover{
+    color: #ec7e01;
+}
