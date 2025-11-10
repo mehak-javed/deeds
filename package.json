@@ -2,7 +2,7 @@
   "name": "deedsconsultancy",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://deedsconsultancy.com",
+  "homepage": "localhost:5173",
   "type": "module",
   "scripts": {
     "dev": "vite",
