@@ -1,7 +1,7 @@
 import Home from './components/Home/Home'
 import Navbar from './components/NavbarData/Navbar'
 import Footer from './components/footer/Footer'
-import Pathway from './components/pathway/pathway'
+import Pathway from './components/pathway/Pathway'
 import Location from './components/Location/Location'
 import { Routes, Route } from 'react-router-dom';
 import StudentReview from './components/Home/StudentReview'
